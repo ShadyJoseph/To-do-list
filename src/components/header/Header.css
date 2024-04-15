@@ -1,0 +1,45 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f9fa;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* For phone screens  */
+@media only screen and (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
